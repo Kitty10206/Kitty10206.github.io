@@ -1,0 +1,151 @@
+body {
+  --moderateviolet: hsl(263, 55%, 52%);
+  --verydarkgreyishblue: hsl(217, 19%, 35%);
+  --verydarkblackishblue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightgrey: hsl(0, 0%, 81%);
+  --lightgreyishblue: hsl(210, 46%, 95%);
+  background-color: var(--lightgreyishblue);
+}
+#profile-photo {
+  float: left;
+  margin-right: 20px;
+  max-width: 33px;
+}
+.danielprofilephoto {
+  border: solid 2.5px;
+  border-radius: 50%;
+  border-color: hsla(0, 0%, 100%, 0.3);
+}
+#patrick img {
+  border: solid 2.5px;
+  border-radius: 50%;
+  border-color: var(--moderateviolet);
+  margin-top: -1px;
+}
+#johnathan img,
+#jeanette img,
+#kira img {
+  border: hidden;
+  border-radius: 50%;
+}
+.box {
+  border-style: hidden;
+  border-radius: 10px;
+  padding: 15px 30px 15px 30px;
+  margin: 15px;
+  box-shadow: 0px 8px 20px hsla(234, 12%, 34%, 0.2);
+}
+h1 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  line-spacing: 25px;
+}
+h2,
+h3,
+p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+p {
+  font-size: 13.5px;
+  line-height: 18px;
+}
+h2 {
+  font-size: 15px;
+}
+h3 {
+  margin: -13px 0px 0px 0px;
+  font-size: 12px;
+}
+
+#daniel {
+  background: url(https://raw.githubusercontent.com/Kitty10206/frontend-mentor/8fe243a9ce3866e4967db89a84f07b5686388bff/bg-pattern-quotation.svg)
+    no-repeat top right 15%;
+  background-color: var(--moderateviolet);
+
+  grid-column-start: first;
+  grid-column-end: span third;
+  grid-row-start: first;
+  grid-row-end: second;
+}
+#johnathan {
+  background-color: var(--verydarkgreyishblue);
+
+  grid-column-start: third;
+  grid-column-end: fourth;
+  grid-row-start: first;
+  grid-row-end: second;
+}
+#jeanette,
+#kira {
+  background-color: var(--white);
+}
+#jeanette {
+  grid-column-start: first;
+  grid-column-end: second;
+  grid-row-start: second;
+  grid-row-end: last;
+}
+#kira {
+  grid-column-start: fourth;
+  grid-column-end: last;
+  grid-row-start: first;
+  grid-row-end: span last;
+}
+#patrick {
+  background-color: var(--verydarkblackishblue);
+
+  grid-column-start: second;
+  grid-column-end: span fourth;
+  grid-row-start: second;
+  grid-row-end: last;
+}
+#daniel h1,
+#daniel h2,
+#johnathan h1,
+#johnathan h2,
+#patrick h1,
+#patrick h2 {
+  color: white;
+}
+#jeanette h1,
+#jeanette h2 {
+  color: var(--verydarkgreyishblue);
+}
+#kira h1,
+#kira h2 {
+  color: var(--verydarkblackishblue);
+}
+#daniel h3,
+#johnathan h3,
+#patrick h3 {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+#jeanette h3 {
+  color: hsla(217, 19%, 35%, 0.5);
+}
+#kira h3 {
+  color: hsla(219, 29%, 14%, 0.5);
+}
+#daniel p,
+#johnathan p,
+#patrick p {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+#jeanette p {
+  color: hsla(217, 19%, 35%, 0.7);
+}
+#kira p {
+  color: hsla(219, 29%, 14%, 0.7);
+}
+@media screen and (min-width: 782px) {
+  #container {
+    display: grid;
+    padding-top: 8%;
+    justify-content: center;
+    grid-template-columns: [first] 290px [second] 290px [third] 280px [fourth] 280px [last];
+    grid-template-rows: [first] 320px [second] 305px [last];
+  }
+}
